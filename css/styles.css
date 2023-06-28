@@ -22,6 +22,7 @@ a {
   text-decoration: none;
   color: #333;
 }
+
 a:hover {
   color: blue;
 }
@@ -74,6 +75,7 @@ li {
 .header .contact {
   background-color: #333;
 }
+
 .header .contact p {
   display: block;
   align-items: center;
@@ -82,9 +84,11 @@ li {
   text-align: center;
   width: 100px;
 }
+
 .header .contact a {
   color: white;
 }
+
 .header .contact a:hover {
   color: blue;
 }
@@ -220,30 +224,33 @@ li {
   background-color: #fff;
   padding: 1rem 20px;
 }
+
 #footer .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 40px 0;
 }
+
 #footer .flex .logo {
   margin-right: 0;
 }
+
 #footer .copyright {
   font-size: 0.625rem;
 }
 
 
 @media screen and (max-width: 1000px) {
-  body {
-  }
   .header {
     height: 80px;
   }
+
   .header .logos {
     margin-top: 1rem;
     display: block;
   }
+
   .header .logos li {
     margin-left: 0;
     margin-top: 1rem;
@@ -262,11 +269,13 @@ li {
   .news-items ul {
     flex-direction: column;
   }
+
   .news-items li {
     width: 100%;
     padding: 0 0 2rem;
     border: 0px;
   }
+
   .news-items li:last-child {
     width: 100%;
     padding: 0;
@@ -275,6 +284,7 @@ li {
   #about {
     flex-direction: column;
   }
+
   #about .about__image {
     width: 100%;
   }
@@ -283,9 +293,11 @@ li {
     width: 100%;
     padding: 3rem 1rem 5rem 1rem;
   }
+
   #business {
     padding: 0 1rem;
   }
+
   #business .__item1,
   #business .__item2,
   #business .__item3,
@@ -295,37 +307,45 @@ li {
     margin-left: 0;
     line-height: 2rem;
   }
+
   #company {
     margin-top: 50px;
     padding: 0 1rem;
   }
+
   #company .profile-box {
     padding: 3rem 1rem;
     background-color: white;
     width: 100%;
   }
+
   #company .profile-box dl {
     display: block;
     flex-wrap: wrap;
   }
+
   #company .profile-box dt {
     margin-top: 1rem;
   }
+
   #company .profile-box dd {
     margin-top: 0.5rem;
     margin-left: 1rem;
   }
+
   #company .photo {
     position: relative;
     width: 100%;
     margin-top: 10px;
     margin-left: 0;
   }
+
   #company .photo::before {
     content: "";
     display: block;
     padding-top: 56.25%;
   }
+
   #company .photo img {
     position: absolute;
     left: 0;
@@ -335,10 +355,12 @@ li {
     height: 100%;
     object-fit: cover;
   }
+
   #footer .flex {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   #footer .flex .logo {
     margin-bottom: 10px;
   }
