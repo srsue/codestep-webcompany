@@ -1,0 +1,345 @@
+@charset 'utf-8'
+
+/* common section */
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 0.9rem;
+  color: #333;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: blue;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.line {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Header */
+.header {
+  padding: 0 0 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header .logos {
+  align-items: center;
+  display: flex;
+}
+
+.header .logos img {
+  height: 25px;
+}
+
+.header .logos ul {
+  display: flex;
+}
+
+.header .logos li {
+  margin-left: 2rem;
+}
+
+.header .contact {
+  background-color: #333;
+}
+.header .contact p {
+  display: block;
+  align-items: center;
+  color: white;
+  line-height: 60px;
+  text-align: center;
+  width: 100px;
+}
+.header .contact a {
+  color: white;
+}
+.header .contact a:hover {
+  color: blue;
+}
+
+.header .contact p:hover {
+  cursor: pointer;
+}
+
+.header ul {
+  display: inline-block;
+}
+
+#mainvisual {
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  height: 0;
+  padding-top: calc(100vh - 80px);
+  object-position: 50% 50%;
+}
+
+#news {
+  padding: 5rem 1rem;
+}
+
+.news-items ul {
+  display: flex;
+}
+
+.news-items li {
+  border-left: 1px solid #333;
+  display: block;
+  width: 33.3%;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.news-items li:first-child {
+  border-left: 0px;
+  padding: 1rem 0 1rem 0;
+}
+
+.news-items span {
+  background-color: black;
+  color: white;
+}
+
+.news-items .title {
+  margin-top: 1rem;
+}
+
+.news-items li p:last-child {
+  border-right: 0px;
+}
+
+#about {
+  display: flex;
+}
+#about .about__image {
+  width: 60%;
+}
+
+#about .about__txt {
+  width: 40%;
+  padding: 10rem 3rem 5rem;
+}
+
+#about .about__txt--contents {
+  line-height: 1.5rem;
+}
+
+#business .__item1 {
+  width: 48%;
+  margin-top: 100px;
+  line-height: 2rem;
+}
+#business .__item2 {
+  width: 48%;
+  margin-top: 50px;
+  line-height: 2rem;
+}
+#business .__item3 {
+  position: relative;
+  width: 48%;
+  margin-top: -850px;
+  margin-left: 52%;
+  line-height: 2rem;
+}
+#business .__item4 {
+  position: relative;
+  width: 48%;
+  margin-top: 50px;
+  margin-left: 52%;
+  line-height: 2rem;
+}
+
+#company {
+  margin-top: 100px;
+}
+
+#company .profile-box {
+  padding: 3rem 1rem;
+  background-color: white;
+  width: 50%;
+}
+
+#company .profile-box dl {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#company .profile-box dt {
+  display: block;
+  width: 30%;
+}
+
+#company .profile-box dd {
+  width: 70%;
+  display: block;
+}
+#company .photo {
+  width: 50%;
+  position: relative;
+  margin-top: -200px;
+  margin-left: 50%;
+}
+
+.logo {
+  width: 100px;
+  line-height: 1px;
+  margin-right: 60px;
+}
+
+#footer {
+  background-color: #fff;
+  padding: 1rem 20px;
+}
+#footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+#footer .flex .logo {
+  margin-right: 0;
+}
+#footer .copyright {
+  font-size: 0.625rem;
+}
+
+
+@media screen and (max-width: 1000px) {
+  body {
+  }
+  .header {
+    height: 80px;
+  }
+  .header .logos {
+    margin-top: 1rem;
+    display: block;
+  }
+  .header .logos li {
+    margin-left: 0;
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .logos img {
+    margin-left: 0;
+    width: 90px;
+  }
+
+  .header .contact {
+    display: none;
+  }
+
+  .news-items ul {
+    flex-direction: column;
+  }
+  .news-items li {
+    width: 100%;
+    padding: 0 0 2rem;
+    border: 0px;
+  }
+  .news-items li:last-child {
+    width: 100%;
+    padding: 0;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+  #about .about__image {
+    width: 100%;
+  }
+
+  #about .about__txt {
+    width: 100%;
+    padding: 3rem 1rem 5rem 1rem;
+  }
+  #business {
+    padding: 0 1rem;
+  }
+  #business .__item1,
+  #business .__item2,
+  #business .__item3,
+  #business .__item4 {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0;
+    line-height: 2rem;
+  }
+  #company {
+    margin-top: 50px;
+    padding: 0 1rem;
+  }
+  #company .profile-box {
+    padding: 3rem 1rem;
+    background-color: white;
+    width: 100%;
+  }
+  #company .profile-box dl {
+    display: block;
+    flex-wrap: wrap;
+  }
+  #company .profile-box dt {
+    margin-top: 1rem;
+  }
+  #company .profile-box dd {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+  #company .photo {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  #company .photo::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  #company .photo img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #footer .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #footer .flex .logo {
+    margin-bottom: 10px;
+  }
+}
